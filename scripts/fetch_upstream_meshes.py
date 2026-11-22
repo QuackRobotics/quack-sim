@@ -4,7 +4,7 @@
 
 The meshes are not committed (GOVERNANCE.md: no binary blobs). They are
 downloaded from upstream at the pinned commit and checked against
-assets/open_duck_mini_v2/SHA256SUMS. Any mismatch or download error exits
+third_party/open_duck_mini_v2/SHA256SUMS. Any mismatch or download error exits
 nonzero; nothing is silently skipped.
 """
 import hashlib
@@ -13,7 +13,7 @@ import sys
 import urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-MODEL_DIR = ROOT / "assets" / "open_duck_mini_v2"
+MODEL_DIR = ROOT / "third_party" / "open_duck_mini_v2"
 SUMS_FILE = MODEL_DIR / "SHA256SUMS"
 UPSTREAM_COMMIT = "b23317a485b3cec7d8417f352478778b3475173c"
 UPSTREAM_BASE = (

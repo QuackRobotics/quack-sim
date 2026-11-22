@@ -16,7 +16,7 @@ import unittest
 import mujoco
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-XML = ROOT / "assets" / "open_duck_mini_v2" / "robot.xml"
+XML = ROOT / "third_party" / "open_duck_mini_v2" / "robot.xml"
 PINNED_SHA256 = "a134222e3b789f491b5a4a4781c6d19c91c86ad4d8481795b6b03f5eab6e0c7a"
 
 # Expected actuator table (index -> name), upstream order.
