@@ -1,0 +1,4 @@
+# Upstream meshes are fetched by scripts/fetch_upstream_meshes.py, never committed.
+assets/open_duck_mini_v2/*.stl
+__pycache__/
+.pytest_cache/

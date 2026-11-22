@@ -1,0 +1,3 @@
+# Matches the shared CI sim-gate pin (quack-core .github/workflows/ci.yml).
+mujoco==3.2.*
+pytest
