@@ -1,0 +1,11 @@
+version = 1
+
+[[annotations]]
+path = [".gitignore", "NOTICE", "README.md", "requirements.txt", "REUSE.toml"]
+SPDX-FileCopyrightText = "2026 Quack Robotics contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["third_party/open_duck_mini_v2/SHA256SUMS"]
+SPDX-FileCopyrightText = "2026 Quack Robotics contributors"
+SPDX-License-Identifier = "Apache-2.0"
