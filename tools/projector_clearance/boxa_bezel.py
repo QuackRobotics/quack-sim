@@ -1,11 +1,11 @@
 """Box A (interim box) with the PRINTED head + both bezels (Atlas 2026-11-24).
-Reuses Woz projbez.py FK/envelope/job (same as table.py: lens (46,-45,115.9), 8 deg down, r 7.2, s -1.2..51.2;
+Reuses Woz projbez.py (vendored here) FK/envelope/job (same as table.py: lens (46,-45,115.9), 8 deg down, r 7.2, s -1.2..51.2;
 nodes <14 mm total or <20 mm bezel redone with all vertices x 5 antenna corners).
 Grid = table.py 5 deg nodes covering box A: neck 0..65, pitch -25..45, yaw -160..160, roll -15..15.
 Cell rule as rollbox.py: a roll band uses every node from floor(lo/5)*5 to ceil(hi/5)*5; bar 4 + m = 5.73 mm.
 Usage: python3 boxa_bezel.py <odm_robot_dir> <print_dir>"""
 import sys, os, itertools, time, numpy as np
-sys.path.insert(0, os.path.expanduser('~/quack-core/woz/eyefit'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # vendored projbez.py
 from multiprocessing import Pool
 import projbez as P
 
