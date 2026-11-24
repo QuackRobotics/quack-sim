@@ -4,3 +4,13 @@ version = 1
 path = ["README.md"]
 SPDX-FileCopyrightText = "2026 Quack Robotics contributors"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [".gitignore", "NOTICE", "requirements.txt", "REUSE.toml"]
+SPDX-FileCopyrightText = "2026 Quack Robotics contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["third_party/open_duck_mini_v2/SHA256SUMS"]
+SPDX-FileCopyrightText = "2026 Quack Robotics contributors"
+SPDX-License-Identifier = "Apache-2.0"

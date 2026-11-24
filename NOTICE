@@ -1,0 +1,12 @@
+quack-sim
+Copyright 2026 Quack Robotics contributors
+
+This repository includes third-party material:
+
+Open Duck Mini v2 MJCF model (third_party/open_duck_mini_v2/robot.xml) and, fetched
+at setup time and not redistributed here, its STL meshes.
+  Source:  https://github.com/apirrone/Open_Duck_Mini
+  Commit:  b23317a485b3cec7d8417f352478778b3475173c
+  Author:  apirrone and Open Duck Mini contributors
+  License: Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+  Changes: none (vendored unmodified)
