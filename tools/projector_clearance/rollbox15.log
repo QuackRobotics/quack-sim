@@ -1,0 +1,13 @@
+rollbox15.py stdout log was lost; results below regenerated from rollbox15_b23317a.npz (same min/argmin as the script; antenna pose at the min is not stored in the npz).
+7203 nodes, bar 5.73 mm (m empirical)
+roll -15..5 (offset 4.5: -10.45): min 11.68 mm at neck -15 pitch -15 yaw +50 roll -15 -> PASS vs 5.73
+roll -20..5 (offset 9: -14.95 / -16.32): min 5.16 mm at neck -15 pitch -15 yaw +50 roll -20 -> FAIL vs 5.73
+roll -20..-15 (enclosing nodes of -16.32): min 5.16 mm at neck -15 pitch -15 yaw +50 roll -20 -> FAIL vs 5.73
+per roll node min:
+  roll -20: 5.16 mm at neck -15 pitch -15 yaw +50  n<5.73: 2/1029
+  roll -15: 11.68 mm at neck -15 pitch -15 yaw +50  n<5.73: 0/1029
+  roll -10: 16.05 mm at neck -10 pitch -15 yaw -50  n<5.73: 0/1029
+  roll -5: 16.05 mm at neck -10 pitch -15 yaw -50  n<5.73: 0/1029
+  roll +0: 16.05 mm at neck -10 pitch -15 yaw -50  n<5.73: 0/1029
+  roll +5: 16.05 mm at neck -10 pitch -15 yaw -50  n<5.73: 0/1029
+  roll +10: 16.05 mm at neck -10 pitch -15 yaw -50  n<5.73: 0/1029
