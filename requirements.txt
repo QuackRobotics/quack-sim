@@ -1,3 +1,4 @@
 # Matches the quack-core sim lockfile pin (quack-core sim/requirements.lock.txt).
 mujoco==3.2.7
+numpy==2.1.3
 pytest
