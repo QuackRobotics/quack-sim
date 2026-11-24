@@ -1,0 +1,15 @@
+95550 nodes, print head + bezels, 141s
+roll +-5                       total:  16.05 mm at neck/pitch/yaw/roll (np.float64(20.0), np.float64(-25.0), np.float64(-160.0), np.float64(-5.0)) part neck_right_sheet  PASS vs 5.73
+roll +-5                       bezel:  47.04 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-25.0), np.float64(-5.0)) part -  PASS vs 5.73
+roll -8/+5                     total:  15.03 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(40.0), np.float64(-10.0)) part head  PASS vs 5.73
+roll -8/+5                     bezel:  44.23 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-10.0)) part -  PASS vs 5.73
+roll +-8                       total:  15.03 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(40.0), np.float64(-10.0)) part head  PASS vs 5.73
+roll +-8                       bezel:  44.23 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-10.0)) part -  PASS vs 5.73
+roll +-9                       total:  15.03 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(40.0), np.float64(-10.0)) part head  PASS vs 5.73
+roll +-9                       bezel:  44.23 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-10.0)) part -  PASS vs 5.73
+roll -10.45 (p1 -5.95 - 4.5)   total:   7.68 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(40.0), np.float64(-15.0)) part head_bot_sheet  PASS vs 5.73
+roll -10.45 (p1 -5.95 - 4.5)   bezel:  40.96 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-15.0)) part -  PASS vs 5.73
+roll -14.95 (p1 -5.95 - 9)     total:   7.68 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(40.0), np.float64(-15.0)) part head_bot_sheet  PASS vs 5.73
+roll -14.95 (p1 -5.95 - 9)     bezel:  40.96 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-15.0)) part -  PASS vs 5.73
+roll +-15                      total:   7.68 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-115.0), np.float64(15.0)) part head_bot_sheet  PASS vs 5.73
+roll +-15                      bezel:  40.96 mm at neck/pitch/yaw/roll (np.float64(0.0), np.float64(-25.0), np.float64(-15.0), np.float64(-15.0)) part -  PASS vs 5.73

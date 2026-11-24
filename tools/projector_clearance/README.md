@@ -12,3 +12,7 @@ Open Duck Mini v2 robot.xml b23317a. Run from this folder with `<robot_dir>` = t
 - **m is empirical**: m = 1.73 mm is the worst cellmin−true seen over 3,967 random in-cell samples (table.py stage 3), not a proven bound.
 - `table.log`, `permesh.log`: results of the 2026-11-24 run (m = 1.73 mm → threshold 5.73 mm).
 Outputs (`table_b23317a.npz`, `permesh.npz`, `table_validate.npy`) are in gs://lj495412-bot-handoff-20261108/quack/atlas/projector_table_b23317a_20261124.tgz.
+
+- \ollbox.py\ + \un.sh\ + \ollbox.log\: roll-band cases on the final table (cell rule, bar 5.73 mm), boxes A (interim) and B (HAL clamp); sim head mesh.
+- \ollbox_halfine.py/.log\: earlier Team Computer run, fresh fine nodes over the HAL box (sim mesh).
+- \oxa_bezel.py/.log\: box A with print/head.stl + left_eye/right_eye bezels via Woz projbez.py (razer ~/quack-core/woz/eyefit). Args: <odm b23317a robot dir> <odm print dir>.

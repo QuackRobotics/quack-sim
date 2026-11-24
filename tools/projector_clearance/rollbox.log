@@ -1,97 +1,14 @@
-7203 nodes, bar 5.73 mm (m empirical)
-coarse 1000/7203 40s
-coarse 2000/7203 67s
-coarse 3000/7203 102s
-coarse 4000/7203 127s
-coarse 5000/7203 149s
-coarse 6000/7203 172s
-coarse 7000/7203 196s
-coarse 7203/7203 198s
-fine on 7203 nodes (coarse min 15.73)
-fine 100/7203 269s
-fine 200/7203 326s
-fine 300/7203 384s
-fine 400/7203 442s
-fine 500/7203 503s
-fine 600/7203 562s
-fine 700/7203 618s
-fine 800/7203 678s
-fine 900/7203 736s
-fine 1000/7203 794s
-fine 1100/7203 857s
-fine 1200/7203 914s
-fine 1300/7203 972s
-fine 1400/7203 1030s
-fine 1500/7203 1091s
-fine 1600/7203 1149s
-fine 1700/7203 1206s
-fine 1800/7203 1263s
-fine 1900/7203 1326s
-fine 2000/7203 1384s
-fine 2100/7203 1441s
-fine 2200/7203 1499s
-fine 2300/7203 1560s
-fine 2400/7203 1618s
-fine 2500/7203 1675s
-fine 2600/7203 1735s
-fine 2700/7203 1794s
-fine 2800/7203 1852s
-fine 2900/7203 1908s
-fine 3000/7203 1966s
-fine 3100/7203 2025s
-fine 3200/7203 2082s
-fine 3300/7203 2140s
-fine 3400/7203 2200s
-fine 3500/7203 2259s
-fine 3600/7203 2316s
-fine 3700/7203 2373s
-fine 3800/7203 2431s
-fine 3900/7203 2493s
-fine 4000/7203 2551s
-fine 4100/7203 2609s
-fine 4200/7203 2666s
-fine 4300/7203 2724s
-fine 4400/7203 2785s
-fine 4500/7203 2841s
-fine 4600/7203 2899s
-fine 4700/7203 2956s
-fine 4800/7203 3017s
-fine 4900/7203 3077s
-fine 5000/7203 3135s
-fine 5100/7203 3191s
-fine 5200/7203 3249s
-fine 5300/7203 3307s
-fine 5400/7203 3364s
-fine 5500/7203 3425s
-fine 5600/7203 3485s
-fine 5700/7203 3541s
-fine 5800/7203 3601s
-fine 5900/7203 3661s
-fine 6000/7203 3717s
-fine 6100/7203 3774s
-fine 6200/7203 3834s
-fine 6300/7203 3891s
-fine 6400/7203 3950s
-fine 6500/7203 4008s
-fine 6600/7203 4067s
-fine 6700/7203 4123s
-fine 6800/7203 4181s
-fine 6900/7203 4241s
-fine 7000/7203 4299s
-fine 7100/7203 4356s
-fine 7200/7203 4412s
-fine 7203/7203 4413s
-
-=== results (4413s); neck/pitch/yaw nodes = box edges, so enclosing set = these nodes ===
-roll -5..5 (box roll +-5): min 16.05 mm at neck -10 pitch -15 yaw -50 roll -5 antennas (0, 0) -> PASS vs 5.73
-roll -10..5 (A: -8/+5): min 16.05 mm at neck -10 pitch -15 yaw -50 roll -10 antennas (0, 0) -> PASS vs 5.73
-roll -10..10 (B: +-8): min 16.05 mm at neck -10 pitch -15 yaw -50 roll -10 antennas (0, 0) -> PASS vs 5.73
-roll -15..5 (overlay to -10.45 / -14.95): min 11.68 mm at neck -15 pitch -15 yaw +50 roll -15 antennas (0, 0) -> PASS vs 5.73
-per roll node min:
-  roll -15: 11.68 mm at neck -15 pitch -15 yaw +50 roll -15 antennas (0, 0)  n<5.73: 0/1029
-  roll -10: 16.05 mm at neck -10 pitch -15 yaw -50 roll -10 antennas (0, 0)  n<5.73: 0/1029
-  roll -5: 16.05 mm at neck -10 pitch -15 yaw -50 roll -5 antennas (0, 0)  n<5.73: 0/1029
-  roll +0: 16.05 mm at neck -10 pitch -15 yaw -50 roll +0 antennas (0, 0)  n<5.73: 0/1029
-  roll +5: 16.05 mm at neck -10 pitch -15 yaw -50 roll +5 antennas (0, 0)  n<5.73: 0/1029
-  roll +10: 16.05 mm at neck -10 pitch -15 yaw -50 roll +10 antennas (0, 0)  n<5.73: 0/1029
-  roll +15: 16.05 mm at neck -10 pitch -15 yaw -50 roll +15 antennas (0, 0)  n<5.73: 0/1029
+== other joints (neck_lo neck_hi pitch_lo pitch_hi yaw_lo yaw_hi): 0 65 -22.5 45 -160 160
+roll_-8/+5             box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -8.0, 5.0] -> min 16.05 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, -160.0, -10.0]; nodes<5.73: 0/54600; PASS
+roll_+-8               box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -8.0, 8.0] -> min 16.05 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, -160.0, -10.0]; nodes<5.73: 0/68250; PASS
+p1-5.95+ovl4.5         box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -10.45, -10.45] -> min 7.68 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, 40.0, -15.0]; nodes<5.73: 0/27300; PASS
+p1-5.95+ovl9.0         box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -14.95, -14.95] -> min 7.68 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, 40.0, -15.0]; nodes<5.73: 0/27300; PASS
+roll_+-10.45           box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -10.45, 10.45] -> min 7.68 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, -115.0, 15.0]; nodes<5.73: 0/95550; PASS
+roll_+-14.95           box [0.0, 65.0, -22.5, 45.0, -160.0, 160.0, -14.95, 14.95] -> min 7.68 mm at (neck,pitch,yaw,roll)=[0.0, -25.0, -115.0, 15.0]; nodes<5.73: 0/95550; PASS
+== other joints (neck_lo neck_hi pitch_lo pitch_hi yaw_lo yaw_hi): -15 15 -13.5 13.5 -48 48
+roll_-8/+5             box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -8.0, 5.0] -> min 16.05 mm at (neck,pitch,yaw,roll)=[0.0, -15.0, -50.0, -10.0]; nodes<5.73: 0/4116; PASS
+roll_+-8               box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -8.0, 8.0] -> min 16.05 mm at (neck,pitch,yaw,roll)=[0.0, -15.0, -50.0, -10.0]; nodes<5.73: 0/5145; PASS
+p1-5.95+ovl4.5         box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -10.45, -10.45] -> min 15.73 mm at (neck,pitch,yaw,roll)=[-15.0, -15.0, 50.0, -15.0]; nodes<5.73: 0/2058; PASS
+p1-5.95+ovl9.0         box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -14.95, -14.95] -> min 15.73 mm at (neck,pitch,yaw,roll)=[-15.0, -15.0, 50.0, -15.0]; nodes<5.73: 0/2058; PASS
+roll_+-10.45           box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -10.45, 10.45] -> min 15.73 mm at (neck,pitch,yaw,roll)=[-15.0, -15.0, 50.0, -15.0]; nodes<5.73: 0/7203; PASS
+roll_+-14.95           box [-15.0, 15.0, -13.5, 13.5, -48.0, 48.0, -14.95, 14.95] -> min 15.73 mm at (neck,pitch,yaw,roll)=[-15.0, -15.0, 50.0, -15.0]; nodes<5.73: 0/7203; PASS
