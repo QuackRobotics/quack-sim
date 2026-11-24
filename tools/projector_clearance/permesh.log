@@ -1,0 +1,15 @@
+5422 negative nodes, 274s; max |min_mesh - table| = 0.000 mm
+head_assembly/head_bot_sheet: culprit 4583 nodes, negative at 5022, min -7.2 mm at (25.0, -45.0, 20.0, -20.0) (neck,hp,yaw,roll); closest vertex s=0.4 mm along tube, trunk (46,-45,116)
+    s along tube over its negative nodes: -1.2..51.2 mm, median 10.7
+head_assembly/head: culprit 671 nodes, negative at 1307, min -7.2 mm at (20.0, -35.0, 15.0, -30.0) (neck,hp,yaw,roll); closest vertex s=-0.3 mm along tube, trunk (46,-45,116)
+    s along tube over its negative nodes: -1.2..51.2 mm, median 7.9
+right_antenna_holder/right_antenna_holder: culprit 126 nodes, negative at 145, min -7.1 mm at (25.0, -45.0, 110.0, -30.0) (neck,hp,yaw,roll); closest vertex s=7.8 mm along tube, trunk (38,-45,117)
+    s along tube over its negative nodes: -1.2..16.7 mm, median -1.2
+head_assembly/sg90: culprit 39 nodes, negative at 72, min -5.3 mm at (-10.0, -45.0, 95.0, -30.0) (neck,hp,yaw,roll); closest vertex s=2.0 mm along tube, trunk (44,-47,116)
+    s along tube over its negative nodes: -1.2..8.1 mm, median -1.2
+left_antenna_holder/antenna: culprit 2 nodes, negative at 4, min -1.1 mm at (25.0, -45.0, -95.0, 30.0) (neck,hp,yaw,roll); closest vertex s=-1.2 mm along tube, trunk (50,-50,118)
+    s along tube over its negative nodes: -1.2..-1.2 mm, median -1.2
+right_antenna_holder/antenna: culprit 1 nodes, negative at 35, min -6.8 mm at (25.0, -45.0, 115.0, -25.0) (neck,hp,yaw,roll); closest vertex s=-1.2 mm along tube, trunk (47,-45,115)
+    s along tube over its negative nodes: -1.2..11.0 mm, median -1.2
+left_antenna_holder/left_antenna_holder: culprit 0 nodes, negative at 4, min -1.0 mm at (15.0, -45.0, -160.0, 30.0) (neck,hp,yaw,roll); closest vertex s=-1.2 mm along tube, trunk (50,-40,117)
+    s along tube over its negative nodes: -1.2..-0.8 mm, median -1.2
