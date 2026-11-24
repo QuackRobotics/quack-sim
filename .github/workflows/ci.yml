@@ -1,0 +1,66 @@
+# SPDX-FileCopyrightText: 2026 Quack Robotics contributors
+# SPDX-License-Identifier: Apache-2.0
+#
+# Convention for every QuackRobotics repo: the last job is named exactly `ci`,
+# needs every other job, and is the only check branch protection requires.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  reuse:
+    name: REUSE lint
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: fsfe/reuse-action@v5
+
+  test:
+    name: Test (Python)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"  # mujoco 3.2.* has no wheel for newer runner Pythons
+      - name: Install
+        run: |
+          if [ -f requirements.txt ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends libgl1
+            pip install -r requirements.txt
+          else
+            echo "no requirements.txt yet"
+          fi
+      - name: Fetch pinned upstream meshes
+        run: |
+          if [ -f scripts/fetch_upstream_meshes.py ]; then
+            python scripts/fetch_upstream_meshes.py
+          else
+            echo "no fetch script yet"
+          fi
+      - name: pytest
+        run: |
+          if [ -d tests ]; then
+            python -m pytest tests/ -v
+          else
+            echo "no tests yet"
+          fi
+
+  ci:
+    name: ci
+    if: always()
+    needs: [reuse, test]
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Gate on all jobs
+        run: |
+          echo "needs results: ${{ join(needs.*.result, ' ') }}"
+          if [ "${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') || contains(needs.*.result, 'skipped') }}" = "true" ]; then
+            echo "a required job did not succeed"; exit 1
+          fi
